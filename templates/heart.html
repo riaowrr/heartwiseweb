@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Heart | HeartWise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="/" class="logo">HEART<span>WISE</span></a>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/eat">Eat</a>
+            <a href="/move">Move</a>
+            <a href="/rest">Rest & Reset</a>
+            <a href="/heart">Your Heart</a>
+        </div>
+    </nav>
+</header>
+
+<main class="page">
+
+    <p class="eyebrow">STEP 4 | YOUR HEART</p>
+
+    <h1>Know the risks.</h1>
+
+    <div class="habit-list">
+        
+        <div class="habit">
+            <label>Tobacco use</label>
+        </div>
+
+        <div class="habit">
+            <label>Harmful use of alcohol</label>
+        </div>
+
+        <div class="habit">
+            <label>Air pollution</label>
+        </div>
+
+        <div class="habit">
+            <label>Stress</label>
+        </div>
+
+        <div class="habit">
+            <label>A mainly unhealthy diet and a sedentary lifestyle</label>
+        </div>
+    </div>
+
+    <h2>Your heart-health checklist</h2>
+
+    <p>
+        This checklist is a useful tool to aid you in being more
+        mindful about everyday habits. It does not calculate your
+        individual cardiovascular risk.
+    </p>
+
+    <div class="habit-list">
+
+        <div class="habit">
+            <label>
+                <input type="checkbox"
+                   class="habit-checkbox"
+                   onclick="updateProgress()">
+                   I eat healthy most of the time
+            </label>
+        </div>
+
+        <div class="habit">
+            <label>
+                <input type="checkbox"
+                   class="habit-checkbox"
+                   onclick="updateProgress()">
+                   I walk everyday
+            </label>
+        </div>
+
+        <div class="habit">
+            <label>
+                <input type="checkbox"
+                   class="habit-checkbox"
+                   onclick="updateProgress()">
+                   I am to do at least two high-intensity workouts
+                   every week
+            </label>
+        </div>
+
+        <div class="habit">
+            <label>
+                <input type="checkbox"
+                   class="habit-checkbox"
+                   onclick="updateProgress()">
+                   I get a healthy amount of sleep based on my age
+            </label>
+        </div>
+
+        <div class="habit">
+            <label>
+                <input type="checkbox"
+                   class="habit-checkbox"
+                   onclick="updateProgress()">
+                   I self-regulate as needed
+            </label>
+        </div>
+
+    </div>
+
+    <h3 id="progress">0 of 5 habits completed</h3>
+
+    <h2>Sources</h2>
+
+    <div class="sources">
+        <p>
+            World Health Organisation. (2025, July 31). Cardiovascular diseases (CVDs). https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds) 
+        </p>
+    </div>
+</main>
+
+<footer>
+    <p>HEARTWISE: A Personal Project researching cardiovascular health.</p>
+
+    <p>
+        Do not use this website in place of personalised medical advice.
+        Visit your local clinic for professional and qualified treatment.
+    </p>
+
+    <a href="mailto:rbhojwani28@student.sacs.nsw.edu.au">Send feedback</a>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
